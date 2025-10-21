@@ -47,7 +47,7 @@ Low-res RHM ground truth ──────────────────�
 <td align="center" colspan="3"><b>Ground Truth RHM</b></td>
 </tr>
 <tr>
-<td align="center" colspan="3"><img src="img/rhm_input.tif" width="200"/><br/><i>3. Low-Resolution RHM Input</i></td>
+<td align="center" colspan="3"><img src="img/rhm_input.png" width="200"/><br/><i>3. Low-Resolution RHM Input</i></td>
 </tr>
 <tr>
 <td align="center" colspan="3"><b>↓ Coregistration + Distribution Matching + Wavelet Fusion</b></td>
@@ -56,7 +56,7 @@ Low-res RHM ground truth ──────────────────�
 <td align="center" colspan="3"><b>Enhanced Output</b></td>
 </tr>
 <tr>
-<td align="center" colspan="3"><img src="img/rhm_output.tif" width="200"/><br/><i>4. High-Resolution Enhanced RHM</i></td>
+<td align="center" colspan="3"><img src="img/rhm_output.png" width="200"/><br/><i>4. High-Resolution Enhanced RHM</i></td>
 </tr>
 </table>
 
