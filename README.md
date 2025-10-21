@@ -29,15 +29,38 @@ Low-res RHM ground truth ──────────────────�
 
 ## Example Results
 
+### Processing Pipeline
+
 <table>
 <tr>
-<td><img src="img/aerial.png" width="256"/><br/><i>Aerial Orthophotography</i></td>
-<td><img src="img/depth.png" width="256"/><br/><i>Depth Estimate (MiDaS)</i></td>
+<td align="center" colspan="3"><b>Depth Estimation Path</b></td>
 </tr>
 <tr>
-<td colspan="2"><img src="img/rhm_input.tif" width="256"/><br/><i>Low-Resolution RHM Input</i></td>
+<td align="center"><img src="img/aerial.png" width="200"/><br/><i>1. Aerial Orthophotography</i></td>
+<td align="center">→</td>
+<td align="center"><img src="img/depth.png" width="200"/><br/><i>2. Depth Estimate (MiDaS)</i></td>
+</tr>
+<tr>
+<td align="center" colspan="3"><b>+</b></td>
+</tr>
+<tr>
+<td align="center" colspan="3"><b>Ground Truth RHM</b></td>
+</tr>
+<tr>
+<td align="center" colspan="3"><img src="img/rhm_input.tif" width="200"/><br/><i>3. Low-Resolution RHM Input</i></td>
+</tr>
+<tr>
+<td align="center" colspan="3"><b>↓ Coregistration + Distribution Matching + Wavelet Fusion</b></td>
+</tr>
+<tr>
+<td align="center" colspan="3"><b>Enhanced Output</b></td>
+</tr>
+<tr>
+<td align="center" colspan="3"><img src="img/rhm_output.tif" width="200"/><br/><i>4. High-Resolution Enhanced RHM</i></td>
 </tr>
 </table>
+
+The enhanced RHM preserves the accurate coarse structure from the ground truth while adding fine-grained details from the depth estimation.
 
 ## Quick Start
 
